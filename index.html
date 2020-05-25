@@ -35,12 +35,7 @@
           </div>
           <div class="slider-content">
             <div class="slider">
-              <div class="slider-left">
                 <div class="slider-circle"></div>
-              </div>
-              <div class="slider-right">
-                <div class="slider-circle hidden"></div>
-              </div>
             </div>
           </div>
           <div class="sub-heading-date">
@@ -55,8 +50,8 @@
               <p class="title">Basic</p>
             </div>
             <div class="price-content">
-              <h1 class="price">&dollar;19.99</h1>
-              <h1 class="price hidden">&dollar;199.99</h1>
+              <h1 class="price price-monthly">&dollar;19.99</h1>
+              <h1 class="price price-annually hidden">&dollar;199.99</h1>
             </div>
             <div class="item-content">
               <div class="item">
@@ -80,8 +75,8 @@
               <p class="title">Professional</p>
             </div>
             <div class="price-content">
-              <h1 class="price">&dollar;24.99</h1>
-              <h1 class="price hidden">&dollar;249.99</h1>
+              <h1 class="price price-monthly">&dollar;24.99</h1>
+              <h1 class="price price-annually hidden">&dollar;249.99</h1>
             </div>
             <div class="item-content">
               <div class="item">
@@ -105,8 +100,8 @@
               <p class="title">Master</p>
             </div>
             <div class="price-content">
-              <h1 class="price">&dollar;39.99</h1>
-              <h1 class="price hidden">&dollar;399.99</h1>
+              <h1 class="price price-monthly">&dollar;39.99</h1>
+              <h1 class="price price-annually hidden">&dollar;399.99</h1>
             </div>
             <div class="item-content">
               <div class="item">
@@ -125,12 +120,31 @@
           </div>
         </div>
       </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Nico</a>.
+      </div>
     </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Nico</a>.
-    </div>
+    <script>
+      const slider = document.querySelector('.slider')
+      const circle = document.querySelector('.slider-circle')
+      const monthly = document.querySelectorAll('.price-monthly')
+      const annually = document.querySelectorAll(".price-annually")
+      
+      slider.addEventListener('click', (e)=>{
+        circle.classList.toggle('slider-click');
+
+        monthly.forEach((month)=>{
+          month.classList.toggle('hidden');
+        });
+
+        annually.forEach((year)=>{
+          year.classList.toggle('hidden');
+        })
+      })
+
+    </script>
   </body>
 </html>

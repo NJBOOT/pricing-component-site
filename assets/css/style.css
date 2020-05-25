@@ -2,12 +2,12 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-size: 1.04vw;
-    font-weight: 700;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
+    font-size: 1.042vw;
+    font-weight: 700;
     background-color: hsl(240, 78%, 98%);
 }
 
@@ -31,7 +31,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100vw;
     min-height: 100vh;
     position: relative;
@@ -49,11 +49,11 @@ body {
 }
 
 .header {
-    padding: 10% 0% 0% 0%;
+    padding: 11% 0% 0% 0%;
 }
 
 .header-text {
-    font-size: 30px;
+    font-size: 2.083vw;
     color: hsl(233, 13%, 49%)
 }
 
@@ -62,26 +62,50 @@ body {
     justify-content: center;
     align-items: center;
     color: hsl(234, 14%, 74%);
-    font-size: .69vw;
+    font-size: 1.042vw;
     width: 100%;
-    padding: 10% 0;
+    padding: 5.5% 0% 8.5% 0%;
 }
 
 .slider {
     background-color: hsl(237, 63%, 64%);
     border-radius: 30px;
-    width: 4.2vw;
+    width: 3.47vw;
     height: 2.1vw;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+}
+.slider:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+.slider-circle {
+    height: 1.736vw;
+    width: 1.736vw;
+    border-radius: 100%;
+    background-color: #ffffff;
+    margin: 5%;
+    transition: .1s;
+}
+
+.slider-click {
+    transform: translateX(-1.35vw);
+}
+/* Something like this when clicked again */
+.slider-return {
+    transform: translateX(-1.35vw);
+    transition: .1s;
 }
 
 .sub-heading-date {
-    margin: 0% 5%;
+    margin: 0% 3%;
 }
 .cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5%;
+    padding-bottom: 6.25%;
     width: 100%;
 }
 
@@ -93,6 +117,12 @@ body {
     justify-content: flex-start;
     background-color: #ffffff;
     position: relative;
+    box-shadow: 0px 5px 50px -5px hsl(234, 14%, 74%)
+}
+
+.middle {
+    background-image: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 10px;
 }
 
 .card:nth-child(1) {
@@ -107,29 +137,37 @@ body {
 }
 
 .card-content {
-    color: hsl(232, 13%, 33%);
+    color:  hsl(233, 13%, 49%);;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
     width: 80%;
 }
+
 .card-content-middle {
-    padding: 5% 0%;
+    padding: 7% 0%;
 }
-.card-content-middle > .title-content {
-    padding-top: 10%;
-}
+
 .title-content {
-    padding: 10% 0 10% 0;
+    padding: 15% 0 10% 0;
+}
+
+.card-content-middle > .title-content {
+    padding: 15.5% 0 10% 0;
 }
 .title {
     font-size: 1.04vw;
 }
 
 .price {
+    color: hsl(232, 13%, 33%);
     font-size: 3.5vw;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
+}
+
+.price-annually {
+    padding-bottom: 12.5%;
 }
 
 .item-content {
@@ -137,10 +175,10 @@ body {
 }
 
 .item {
-    width: 100%;
     border-top: 1px solid hsl(234, 14%, 74%);
     text-align: center;
-    padding: 5%
+    padding: 7.5% 0%;
+    width: 100%;
 }
 
 .item:nth-child(3) {
@@ -148,9 +186,10 @@ body {
 }
 
 .button-content {
-    padding: 10% 0%;
+    padding: 11.5% 0%;
     width: 100%;
 }
+
 .button {
     border: none;
     background: none;
@@ -162,19 +201,30 @@ body {
     width: 100%;
 }
 
+.button:hover {
+    background: none;
+    color:  hsl(237, 63%, 64%);
+    border: 1px solid hsl(233, 13%, 49%);
+    cursor: pointer;
+}
+
 .button-middle {
     color: hsl(237, 63%, 64%);
     background-color: #ffffff;
     background-image: none;
 }
-.middle {
-    background-image: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-    border-radius: 10px;
+
+.button-middle:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 .attribution { 
-    font-size: 10px; text-align: center;
-    font-weight: 300; 
+    font-size: 10px; 
+    text-align: center;
+    font-weight: 300;
+    position: absolute;
+    bottom: 2px;
 }
 .attribution a {
     font-size: 10px;
