@@ -28,13 +28,13 @@ body {
 }
 
 .main-container {
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: flex-start;
     width: 100vw;
     /* max-height:100vh; */
-    position: relative;
 }
 
 .hidden {
