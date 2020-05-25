@@ -33,7 +33,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     width: 100vw;
-    min-height: 100vh;
+    /* max-height:100vh; */
     position: relative;
 }
 
@@ -91,11 +91,6 @@ body {
 
 .slider-click {
     transform: translateX(-1.35vw);
-}
-/* Something like this when clicked again */
-.slider-return {
-    transform: translateX(-1.35vw);
-    transition: .1s;
 }
 
 .sub-heading-date {
