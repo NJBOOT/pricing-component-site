@@ -165,6 +165,10 @@ body {
     padding-bottom: 12.5%;
 }
 
+.card-content-middle > .price-content > .price {
+    color: #ffffff;
+}
+
 .item-content {
     width: 100%;
 }
