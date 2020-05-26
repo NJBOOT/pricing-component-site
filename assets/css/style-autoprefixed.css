@@ -1,4 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
@@ -28,9 +36,18 @@ body {
 }
 
 .main-container {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   position: relative;
   width: 100vw;
@@ -40,9 +57,18 @@ body {
   display: none;
 }
 .heading-container {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 50%;
 }
@@ -57,21 +83,32 @@ body {
 }
 
 .sub-heading {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: hsl(234, 14%, 74%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1.042vw;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 5.5% 0% 8.5% 0%;
   width: 100%;
 }
 
 .slider {
+  -ms-flex-line-pack: start;
   align-content: flex-start;
   background-color: hsl(237, 63%, 64%);
   border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 2.1vw;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   width: 3.47vw;
 }
@@ -84,11 +121,15 @@ body {
   border-radius: 100%;
   height: 1.736vw;
   margin: 5%;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
   transition: 0.1s;
   width: 1.736vw;
 }
 
 .slider-click {
+  -webkit-transform: translateX(-1.35vw);
+  -ms-transform: translateX(-1.35vw);
   transform: translateX(-1.35vw);
 }
 
@@ -96,25 +137,46 @@ body {
   margin: 0% 3%;
 }
 .cards-container {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-bottom: 6.25%;
   width: 100%;
 }
 
 .card {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 50px -5px hsl(234, 14%, 74%);
   box-shadow: 0px 5px 50px -5px hsl(234, 14%, 74%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   min-width: 24.3%;
   position: relative;
 }
 
 .middle {
+  background-image: -o-linear-gradient(
+    315deg,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
   background-image: linear-gradient(
     135deg,
     hsl(236, 72%, 79%),
@@ -135,10 +197,19 @@ body {
 }
 
 .card-content {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: hsl(233, 13%, 49%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 80%;
 }
@@ -196,6 +267,18 @@ body {
 }
 
 .button {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(hsl(236, 72%, 79%)),
+    to(hsl(237, 63%, 64%))
+  );
+  background-image: -o-linear-gradient(
+    left,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
   background-image: linear-gradient(
     90deg,
     hsl(236, 72%, 79%),
