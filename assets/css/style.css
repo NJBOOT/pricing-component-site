@@ -196,12 +196,7 @@ body {
 }
 
 .button {
-  background-image: linear-gradient(
-    90deg,
-    hsl(236, 72%, 79%),
-    hsl(237, 63%, 64%)
-  );
-  background: none;
+  background-image: linear-gradient(90deg,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
   border-radius: 10px;
   border: none;
   color: #ffffff;
